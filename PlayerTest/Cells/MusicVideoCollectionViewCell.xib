@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="musicVideoCollectionCell" id="gTV-IL-0wX" customClass="MusicVideoCollectionViewCell" customModule="PlayerTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist's name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G7-UP-qyF">
+                        <rect key="frame" x="100" y="5" width="175" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT1-tt-IHl">
+                        <rect key="frame" x="100" y="58" width="65" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="EEg-AV-hPG">
+                        <rect key="frame" x="5" y="5" width="90" height="90"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="fJA-9K-lEC"/>
+                            <constraint firstAttribute="width" constant="90" id="roY-Kn-PaI"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-2u-fUt">
+                        <rect key="frame" x="230" y="65" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="W1f-GP-MJ6"/>
+                            <constraint firstAttribute="height" constant="30" id="i3s-B2-fTB"/>
+                        </constraints>
+                        <state key="normal" image="iconiTunnes"/>
+                        <connections>
+                            <action selector="goiTunnesActionButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ljs-dF-Yn4"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song's name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYD-Ow-wdR">
+                        <rect key="frame" x="100" y="31" width="175" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.54901960780000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="EEg-AV-hPG" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="7c1-e9-1PX"/>
+                <constraint firstItem="7G7-UP-qyF" firstAttribute="leading" secondItem="EEg-AV-hPG" secondAttribute="trailing" constant="5" id="85y-XI-T1N"/>
+                <constraint firstItem="EEg-AV-hPG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="97E-SX-Ily"/>
+                <constraint firstItem="XYD-Ow-wdR" firstAttribute="leading" secondItem="EEg-AV-hPG" secondAttribute="trailing" constant="5" id="CGf-BE-Ree"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Hwr-2u-fUt" secondAttribute="bottom" constant="5" id="KYT-vQ-iju"/>
+                <constraint firstItem="7G7-UP-qyF" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" constant="5" id="PfT-vw-yp8"/>
+                <constraint firstItem="XYD-Ow-wdR" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" constant="5" id="WpZ-BB-h0z"/>
+                <constraint firstItem="JT1-tt-IHl" firstAttribute="top" secondItem="XYD-Ow-wdR" secondAttribute="bottom" constant="10" id="eZU-tj-TJk"/>
+                <constraint firstItem="7G7-UP-qyF" firstAttribute="top" secondItem="EEg-AV-hPG" secondAttribute="top" id="lHv-cL-Of9"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Hwr-2u-fUt" secondAttribute="trailing" constant="10" id="og3-Go-OA7"/>
+                <constraint firstItem="JT1-tt-IHl" firstAttribute="leading" secondItem="EEg-AV-hPG" secondAttribute="trailing" constant="5" id="tog-LK-Aid"/>
+                <constraint firstItem="XYD-Ow-wdR" firstAttribute="top" secondItem="7G7-UP-qyF" secondAttribute="bottom" constant="5" id="wV2-0K-dnB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="303" height="100"/>
+            <connections>
+                <outlet property="artistLabel" destination="7G7-UP-qyF" id="rxc-ah-ju9"/>
+                <outlet property="iTunnesButton" destination="Hwr-2u-fUt" id="TWS-Nd-QT3"/>
+                <outlet property="songLabel" destination="XYD-Ow-wdR" id="BhY-QU-Vge"/>
+                <outlet property="timeLabel" destination="JT1-tt-IHl" id="tQC-VP-yai"/>
+                <outlet property="videoImage" destination="EEg-AV-hPG" id="xj6-WN-pON"/>
+            </connections>
+            <point key="canvasLocation" x="-32.5" y="-52"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconiTunnes" width="50" height="50"/>
+        <image name="noPhoto" width="100" height="100"/>
+    </resources>
+</document>

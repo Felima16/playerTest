@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicVideoCell" id="KGk-i7-Jjw" customClass="MusicVideoViewCell" customModule="PlayerTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="xvU-S2-mq2">
+                        <rect key="frame" x="8" y="15" width="80" height="80"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xvU-S2-mq2" secondAttribute="height" multiplier="1:1" id="q1X-xj-fis"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist's name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-NS-Z5p">
+                        <rect key="frame" x="93" y="10" width="222" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song's name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azl-wk-Pcm">
+                        <rect key="frame" x="93" y="39" width="222" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKJ-3B-6eH">
+                        <rect key="frame" x="93" y="61" width="222" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0x-Ky-0BO">
+                        <rect key="frame" x="282" y="66.5" width="33" height="33"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="F0x-Ky-0BO" secondAttribute="height" multiplier="1:1" id="5Pd-rp-8lR"/>
+                        </constraints>
+                        <state key="normal" image="iconiTunnes"/>
+                        <connections>
+                            <action selector="goiTunnesActionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="31j-XA-IBe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.54901960780000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="WKJ-3B-6eH" firstAttribute="top" secondItem="Azl-wk-Pcm" secondAttribute="bottom" constant="5" id="7FP-qq-Vfu"/>
+                    <constraint firstItem="eVF-NS-Z5p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Du-n6-hi8"/>
+                    <constraint firstItem="Azl-wk-Pcm" firstAttribute="top" secondItem="eVF-NS-Z5p" secondAttribute="bottom" constant="8" id="Ayv-XJ-gYG"/>
+                    <constraint firstAttribute="trailing" secondItem="F0x-Ky-0BO" secondAttribute="trailing" constant="5" id="CN3-Gj-3oS"/>
+                    <constraint firstItem="F0x-Ky-0BO" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.3" id="D4V-AL-FIp"/>
+                    <constraint firstAttribute="bottom" secondItem="F0x-Ky-0BO" secondAttribute="bottom" constant="10" id="Nav-ih-8pf"/>
+                    <constraint firstItem="WKJ-3B-6eH" firstAttribute="leading" secondItem="xvU-S2-mq2" secondAttribute="trailing" constant="5" id="OF4-u4-NA4"/>
+                    <constraint firstItem="xvU-S2-mq2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pjo-g0-3MT"/>
+                    <constraint firstAttribute="trailing" secondItem="WKJ-3B-6eH" secondAttribute="trailing" constant="5" id="UN4-Qu-XYi"/>
+                    <constraint firstAttribute="trailing" secondItem="Azl-wk-Pcm" secondAttribute="trailing" constant="5" id="Udj-Wr-GDe"/>
+                    <constraint firstItem="Azl-wk-Pcm" firstAttribute="leading" secondItem="xvU-S2-mq2" secondAttribute="trailing" constant="5" id="VtV-8q-hnI"/>
+                    <constraint firstItem="F0x-Ky-0BO" firstAttribute="top" secondItem="Azl-wk-Pcm" secondAttribute="bottom" constant="10.5" id="avM-d7-9nW"/>
+                    <constraint firstItem="xvU-S2-mq2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="azD-4T-dAg"/>
+                    <constraint firstAttribute="trailing" secondItem="eVF-NS-Z5p" secondAttribute="trailing" constant="5" id="dPo-mK-qH8"/>
+                    <constraint firstItem="eVF-NS-Z5p" firstAttribute="leading" secondItem="xvU-S2-mq2" secondAttribute="trailing" constant="5" id="m90-GC-572"/>
+                    <constraint firstItem="xvU-S2-mq2" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="xGf-5h-g1f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="eVF-NS-Z5p" id="2NJ-Do-41E"/>
+                <outlet property="iTunnesButton" destination="F0x-Ky-0BO" id="jxp-Ip-3Iv"/>
+                <outlet property="songLabel" destination="Azl-wk-Pcm" id="F0o-Md-lPY"/>
+                <outlet property="timeLabel" destination="WKJ-3B-6eH" id="tx8-kP-X6m"/>
+                <outlet property="videoImage" destination="xvU-S2-mq2" id="fd6-Kx-5bD"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconiTunnes" width="50" height="50"/>
+        <image name="noPhoto" width="100" height="100"/>
+    </resources>
+</document>

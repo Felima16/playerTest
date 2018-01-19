@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D9D94D920115FF6003A60EE /* MusicVideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D94D720115FF6003A60EE /* MusicVideoViewCell.swift */; };
+		6D9D94DA20115FF6003A60EE /* MusicVideoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D94D820115FF6003A60EE /* MusicVideoViewCell.xib */; };
+		6D9D94DD201161B0003A60EE /* MusicVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D94DB201161B0003A60EE /* MusicVideoCollectionViewCell.swift */; };
+		6D9D94DE201161B0003A60EE /* MusicVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D94DC201161B0003A60EE /* MusicVideoCollectionViewCell.xib */; };
+		6D9D94E62011714B003A60EE /* MusicVideoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D94E52011714B003A60EE /* MusicVideoExtension.swift */; };
 		6DEA5AD4200BD69D00F6C5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5AD3200BD69D00F6C5EB /* AppDelegate.swift */; };
 		6DEA5AD9200BD69D00F6C5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA5AD7200BD69D00F6C5EB /* Main.storyboard */; };
 		6DEA5ADB200BD69D00F6C5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA5ADA200BD69D00F6C5EB /* Assets.xcassets */; };
 		6DEA5ADE200BD69D00F6C5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA5ADC200BD69D00F6C5EB /* LaunchScreen.storyboard */; };
 		6DEA5AE9200BD69D00F6C5EB /* PlayerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5AE8200BD69D00F6C5EB /* PlayerTestTests.swift */; };
 		6DEA5AF4200BD69D00F6C5EB /* PlayerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5AF3200BD69D00F6C5EB /* PlayerTestUITests.swift */; };
-		6DEA5B06200F597000F6C5EB /* MusicVideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5B05200F597000F6C5EB /* MusicVideoViewCell.swift */; };
-		6DEA5B08200F610C00F6C5EB /* MusicVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5B07200F610C00F6C5EB /* MusicVideoTableViewController.swift */; };
+		6DEA5B08200F610C00F6C5EB /* MusicVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5B07200F610C00F6C5EB /* MusicVideoViewController.swift */; };
+		6DFF33A22011E9A6005BBFAF /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF33A12011E9A6005BBFAF /* iTunesAPI.swift */; };
+		6DFF33A42011ECD6005BBFAF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF33A32011ECD6005BBFAF /* Response.swift */; };
+		6DFF33A62011EFFE005BBFAF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF33A52011EFFE005BBFAF /* ModelManager.swift */; };
+		6DFF33A820122B6A005BBFAF /* UICollorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF33A720122B6A005BBFAF /* UICollorExtension.swift */; };
 		91DE5F358ED788A08B59BDEE /* Pods_PlayerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C434B5BAE65BDF82A2BCD6 /* Pods_PlayerTest.framework */; };
 		A17E7BDC60EF2A41F067CCDE /* Pods_PlayerTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AF4DD71E0CAA8739626CD0 /* Pods_PlayerTestUITests.framework */; };
 		BCD7C78F490F51A0595C850F /* Pods_PlayerTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFE2F1444D064DA13DF12E0 /* Pods_PlayerTestTests.framework */; };
@@ -43,6 +51,11 @@
 		1DE52F480F54D1B3624516F4 /* Pods-PlayerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest.release.xcconfig"; sourceTree = "<group>"; };
 		2EE94FBF12C7A0F8820285E3 /* Pods-PlayerTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTestUITests/Pods-PlayerTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41C434B5BAE65BDF82A2BCD6 /* Pods_PlayerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9D94D720115FF6003A60EE /* MusicVideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoViewCell.swift; sourceTree = "<group>"; };
+		6D9D94D820115FF6003A60EE /* MusicVideoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicVideoViewCell.xib; sourceTree = "<group>"; };
+		6D9D94DB201161B0003A60EE /* MusicVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D9D94DC201161B0003A60EE /* MusicVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D9D94E52011714B003A60EE /* MusicVideoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoExtension.swift; sourceTree = "<group>"; };
 		6DEA5AD0200BD69D00F6C5EB /* PlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEA5AD3200BD69D00F6C5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEA5AD8200BD69D00F6C5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,8 +68,11 @@
 		6DEA5AEF200BD69D00F6C5EB /* PlayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEA5AF3200BD69D00F6C5EB /* PlayerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTestUITests.swift; sourceTree = "<group>"; };
 		6DEA5AF5200BD69D00F6C5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DEA5B05200F597000F6C5EB /* MusicVideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoViewCell.swift; sourceTree = "<group>"; };
-		6DEA5B07200F610C00F6C5EB /* MusicVideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewController.swift; sourceTree = "<group>"; };
+		6DEA5B07200F610C00F6C5EB /* MusicVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoViewController.swift; sourceTree = "<group>"; };
+		6DFF33A12011E9A6005BBFAF /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		6DFF33A32011ECD6005BBFAF /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		6DFF33A52011EFFE005BBFAF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		6DFF33A720122B6A005BBFAF /* UICollorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollorExtension.swift; sourceTree = "<group>"; };
 		7024A583EC80D27682C1C95C /* Pods-PlayerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFE2F1444D064DA13DF12E0 /* Pods_PlayerTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayerTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E564F0115EBAFA3BFC79F84A /* Pods-PlayerTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTestUITests/Pods-PlayerTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D9D94E420117120003A60EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D9D94E52011714B003A60EE /* MusicVideoExtension.swift */,
+				6DFF33A720122B6A005BBFAF /* UICollorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6DEA5AC7200BD69D00F6C5EB = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +141,9 @@
 		6DEA5AD2200BD69D00F6C5EB /* PlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				6DFF33A02011E3B4005BBFAF /* Models */,
+				6DFF339F2011E3AD005BBFAF /* API */,
+				6D9D94E420117120003A60EE /* Extensions */,
 				6DEA5B04200F594000F6C5EB /* Cells */,
 				6DEA5B01200F591100F6C5EB /* ViewControllers */,
 				6DEA5AD3200BD69D00F6C5EB /* AppDelegate.swift */,
@@ -148,7 +176,7 @@
 		6DEA5B01200F591100F6C5EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6DEA5B07200F610C00F6C5EB /* MusicVideoTableViewController.swift */,
+				6DEA5B07200F610C00F6C5EB /* MusicVideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,9 +184,29 @@
 		6DEA5B04200F594000F6C5EB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6DEA5B05200F597000F6C5EB /* MusicVideoViewCell.swift */,
+				6D9D94D720115FF6003A60EE /* MusicVideoViewCell.swift */,
+				6D9D94D820115FF6003A60EE /* MusicVideoViewCell.xib */,
+				6D9D94DB201161B0003A60EE /* MusicVideoCollectionViewCell.swift */,
+				6D9D94DC201161B0003A60EE /* MusicVideoCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6DFF339F2011E3AD005BBFAF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DFF33A12011E9A6005BBFAF /* iTunesAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6DFF33A02011E3B4005BBFAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DFF33A32011ECD6005BBFAF /* Response.swift */,
+				6DFF33A52011EFFE005BBFAF /* ModelManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B5A62AC59C42F052B2338A99 /* Frameworks */ = {
@@ -300,8 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9D94DE201161B0003A60EE /* MusicVideoCollectionViewCell.xib in Resources */,
 				6DEA5ADE200BD69D00F6C5EB /* LaunchScreen.storyboard in Resources */,
 				6DEA5ADB200BD69D00F6C5EB /* Assets.xcassets in Resources */,
+				6D9D94DA20115FF6003A60EE /* MusicVideoViewCell.xib in Resources */,
 				6DEA5AD9200BD69D00F6C5EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,10 +396,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RippleEffectView/RippleEffectView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RippleEffectView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -477,9 +535,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEA5B08200F610C00F6C5EB /* MusicVideoTableViewController.swift in Sources */,
-				6DEA5B06200F597000F6C5EB /* MusicVideoViewCell.swift in Sources */,
+				6D9D94DD201161B0003A60EE /* MusicVideoCollectionViewCell.swift in Sources */,
+				6DFF33A62011EFFE005BBFAF /* ModelManager.swift in Sources */,
+				6DEA5B08200F610C00F6C5EB /* MusicVideoViewController.swift in Sources */,
+				6D9D94D920115FF6003A60EE /* MusicVideoViewCell.swift in Sources */,
+				6DFF33A820122B6A005BBFAF /* UICollorExtension.swift in Sources */,
+				6DFF33A42011ECD6005BBFAF /* Response.swift in Sources */,
 				6DEA5AD4200BD69D00F6C5EB /* AppDelegate.swift in Sources */,
+				6DFF33A22011E9A6005BBFAF /* iTunesAPI.swift in Sources */,
+				6D9D94E62011714B003A60EE /* MusicVideoExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
